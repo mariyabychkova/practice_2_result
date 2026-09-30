@@ -10,7 +10,7 @@
 
 ```bash
 poetry run python --version
-````
+```
 
 Результат:
 
@@ -47,7 +47,7 @@ Poetry (version 2.5.1)
 Путь к интерпретатору:
 
 ```text
-/Users/mariabyckova/Documents/питончик/mlops/lab_2/pip_project/.venv/bin/python
+/Users/mariabyckova/Documents/питончик/mlops/practice_2_result/poetry_project/.venv
 ```
 
 Используемая версия:
@@ -84,8 +84,8 @@ poetry env info
 ```text
 Python:         3.12.14
 Implementation: CPython
-Path:           /Users/mariabyckova/Documents/питончик/mlops/lab_2/poetry_project/.venv
-Executable:     /Users/mariabyckova/Documents/питончик/mlops/lab_2/poetry_project/.venv/bin/python
+Path:           /Users/mariabyckova/Documents/питончик/mlops/practice_2_result/poetry_project/.venv
+Executable:     /Users/mariabyckova/Documents/питончик/mlops/practice_2_result/poetry_project/.venv/bin/python
 Valid:          True
 ```
 
@@ -471,6 +471,16 @@ poetry run python plt_temp.py
 ```
 
 Таким образом, после полного удаления `.venv` окружение было успешно восстановлено из `pyproject.toml` и `poetry.lock`.
+
+### Экспорт зависимостей Poetry в requirements.txt
+
+Для экспорта зависимостей Poetry-проекта в формат `requirements.txt` была выполнена команда:
+
+```bash
+poetry export -f requirements.txt -o requirements.txt
+```
+
+В результате в каталоге poetry_project был создан файл requirements.txt, содержащий зафиксированные зависимости проекта.
 
 ---
 
